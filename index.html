@@ -4,9 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <title>DMN</title>
   </head>
   <body>
     <h1>DMN to najlepsza marka klasy premium</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SLIDER IMAGES START -->
+    <section class="images-slider">
+
+      <div class="options">
+        <div class="option active" style="--optionBackground:url(/images/a_1.jpg);">
+          
+    
+        </div>
+        <div class="option" style="--optionBackground:url(/images/a_2.jpg);">
+           
+    
+        </div>
+        <div class="option" style="--optionBackground:url(/images/b_1.jpg);">
+           
+    
+        </div>
+        <div class="option" style="--optionBackground:url(/images/b_2.jpg);">
+           
+    
+        </div>
+        <div class="option" style="--optionBackground:url(/images/c_2.jpg);">
+           
+    
+        </div>
+     </div>
+
+
+
+    </section>
+<!-- SLIDER IMAGES END -->
   </body>
+  <script>
+    $(".option").click(function(){
+      $(".option").removeClass("active");
+      $(this).addClass("active");
+    });
+   </script>
 </html>
