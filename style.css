@@ -1,25 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial;
+  box-sizing: border-box;
+}
 
+body {
+  background: rgb(105, 88, 74);
+  background: linear-gradient(
+    159deg,
+    rgba(105, 88, 74, 1) 0%,
+    rgba(246, 247, 247, 1) 100%
+  );
+}
 
+/* Header and navbar styling */
 
+header {
+  width: 100%;
+  height: 80px;
+  background: #11101b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
 
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fefefe;
+}
 
+.hamburger {
+  display: none;
+}
 
+.nav-bar ul {
+  display: flex;
+}
 
+.nav-bar ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
 
+.nav-bar ul li a:hover {
+  color: #11101b;
+  background: #fefefe;
+}
 
+.navbar ul li a.active {
+  color: #11101b;
+  background: #fefefe;
+}
 
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
 
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #11101b;
+    transition: 0.5s;
+    overflow: hidden;
+  }
 
+  .nav-bar.active {
+    height: 450px;
+  }
 
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+  }
 
+  .nav-bar.active ul {
+    opacity: 1;
+  }
 
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+}
 
-
-
-
-
-
-
+/* End of header and navbar styling */
 
 /* START -> SLIDER of Photos by MN V */
 body .options {
@@ -29,7 +127,7 @@ body .options {
   overflow: hidden;
   min-width: 600px;
   max-width: 900px;
-  width:100px;
+  width: 100px;
   /* width: calc(100% - 100px); */
   height: 400px;
 }
@@ -71,29 +169,29 @@ body .options .option {
   min-width: 60px;
   border-radius: 30px;
   margin: 10px;
-  background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
   background-size: auto 120%;
   background-position: center;
   cursor: pointer;
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 body .options .option:nth-child(1) {
-  --defaultBackground: #ED5565;
+  --defaultBackground: #ed5565;
 }
 body .options .option:nth-child(2) {
-  --defaultBackground: #FC6E51;
+  --defaultBackground: #fc6e51;
 }
 body .options .option:nth-child(3) {
-  --defaultBackground: #FFCE54;
+  --defaultBackground: #ffce54;
 }
 body .options .option:nth-child(4) {
-  --defaultBackground: #2ECC71;
+  --defaultBackground: #2ecc71;
 }
 body .options .option:nth-child(5) {
-  --defaultBackground: #5D9CEC;
+  --defaultBackground: #5d9cec;
 }
 body .options .option:nth-child(6) {
-  --defaultBackground: #AC92EC;
+  --defaultBackground: #ac92ec;
 }
 body .options .option.active {
   flex-grow: 10000;
@@ -107,5 +205,3 @@ body .options .option:not(.active) {
   flex-grow: 1;
 }
 /* End of CSS SLIDER */
-
-
