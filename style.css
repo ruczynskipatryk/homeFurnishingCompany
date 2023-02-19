@@ -6,6 +6,9 @@
   font-family: Arial;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background: rgb(105, 88, 74);
@@ -133,6 +136,13 @@ h3 {
   margin-bottom: 20px;
 }
 /* End of main styling */
+
+/* Icons __ */
+
+
+
+/* End -- ICONS */
+
 
 /* START -> SLIDER of Photos by MN V */
 body .options {
