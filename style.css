@@ -6,7 +6,7 @@
   font-family: Arial;
   box-sizing: border-box;
 }
-/*
+
 body {
   background: rgb(105, 88, 74);
   background: linear-gradient(
@@ -15,7 +15,7 @@ body {
     rgba(246, 247, 247, 1) 100%
   );
 }
-*/
+
 /* Header and navbar styling */
 
 header {
