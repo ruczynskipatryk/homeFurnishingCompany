@@ -6,17 +6,15 @@
   font-family: Arial;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: rgb(105, 88, 74);
-  background: linear-gradient(
-    159deg,
-    rgba(105, 88, 74, 1) 0%,
-    rgba(246, 247, 247, 1) 100%
-  );
+  --elements-color: #6b705c;
+  --text-color: #a5a58d;
+  --background-color: #ffe8d6;
+  background: var(--background-color);
 }
 
 /* Header and navbar styling */
@@ -24,7 +22,7 @@ body {
 header {
   width: 100%;
   height: 80px;
-  background: #11101b;
+  background: var(--elements-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,7 +32,7 @@ header {
 .logo {
   font-size: 28px;
   font-weight: bold;
-  color: #fefefe;
+  color: var(--background-color);
 }
 
 .hamburger {
@@ -47,7 +45,7 @@ header {
 
 .nav-bar ul li a {
   display: block;
-  color: #fefefe;
+  color: var(--text-color);
   font-size: 20px;
   padding: 10px 25px;
   border-radius: 50px;
@@ -56,13 +54,13 @@ header {
 }
 
 .nav-bar ul li a:hover {
-  color: #11101b;
-  background: #fefefe;
+  color: var(--text-color);
+  background: var(--elements-color);
 }
 
 .navbar ul li a.active {
-  color: #11101b;
-  background: #fefefe;
+  color: var(--text-color);
+  background: var(--text-color);
 }
 
 @media only screen and (max-width: 1320px) {
@@ -83,7 +81,7 @@ header {
   .hamburger .line {
     width: 30px;
     height: 3px;
-    background: #fefefe;
+    background: var(--background-color);
     margin: 6px 0;
   }
 
@@ -139,10 +137,7 @@ h3 {
 
 /* Icons __ */
 
-
-
 /* End -- ICONS */
-
 
 /* START -> SLIDER of Photos by MN V */
 body .options {
