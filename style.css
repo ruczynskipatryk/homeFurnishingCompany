@@ -13,6 +13,7 @@ html {
 body {
   --elements-color: #6b705c;
   --text-color: #a5a58d;
+  --elements2-color: #b7b7a4;
   --background-color: #ffe8d6;
   background: var(--background-color);
 }
@@ -45,7 +46,7 @@ header {
 
 .nav-bar ul li a {
   display: block;
-  color: var(--text-color);
+  color: var(--background-color);
   font-size: 20px;
   padding: 10px 25px;
   border-radius: 50px;
@@ -54,8 +55,8 @@ header {
 }
 
 .nav-bar ul li a:hover {
-  color: var(--text-color);
-  background: var(--elements-color);
+  color: var(--background-color);
+  background: var(--elements2-color);
 }
 
 .navbar ul li a.active {
@@ -92,7 +93,7 @@ header {
     left: 0;
     right: 0;
     width: 100vw;
-    background: #11101b;
+    background: var(--elements-color);
     transition: 0.5s;
     overflow: hidden;
   }
@@ -123,19 +124,49 @@ header {
 /* Start of main styling*/
 main {
   margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+main div.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  color: var(--elements-color);
+}
+
+h2 {
+  color: var(--elements-color);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+main .box img {
+  width: 40%;
+  height: 40%;
 }
 
 h3 {
-  color: white;
-  font-size: 25px;
+  color: var(--text-color);
+  font-size: 27px;
   margin-bottom: 20px;
 }
 /* End of main styling */
 
 /* Icons __ */
+
+h4 {
+  color: var(--elements-color);
+  font-size: 20px;
+}
 
 /* End -- ICONS */
 
