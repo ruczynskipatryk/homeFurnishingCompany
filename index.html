@@ -27,22 +27,22 @@
       <nav class="nav-bar">
         <ul>
           <li>
-            <a href="" class="active">Główna</a>
+            <a href="#main" class="active">Główna</a>
           </li>
           <li>
-            <a href="">O nas</a>
+            <a href="#about">O nas</a>
           </li>
           <li>
-            <a href="">Realizacje</a>
+            <a href="#work">Realizacje</a>
           </li>
           <li>
-            <a href="">Kontakt</a>
+            <a href="#contact">Kontakt</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="box">
+      <div id="main" class="box">
         <div class="main-text">
           <h1>DMN</h1>
           <h2>
@@ -54,26 +54,38 @@
       </div>
     </main>
 
-    <!-- Start Icons ->>>>V -->
-    <div class="">
+    <!-- Start about ->>>>V -->
+    <section id="about" class="presentation">
       <h3>Wymarzone <span class="h3input"> </span></h3>
-      <h4>Wykonane montaże</h4>
-      <ul class="">
-        <li class="">
-          <i class="fa-solid fa-house-chimney-window"></i><br />Okien
+      <ul class="icon-list">
+        <li class="icon">
+          <i class="fa-solid fa-door-closed"></i>
+          <p>Drzwi</p>
         </li>
-        <li class=""><i class="fa-solid fa-door-closed"></i><br />Drzwi</li>
-        <li class=""><i class="fa-solid fa-table-columns"></i><br />Rolet</li>
+        <li class="icon">
+          <i class="fa-solid fa-house-chimney-window"></i>
+          <p>Okna</p>
+        </li>
+        <li class="icon">
+          <i class="fa-solid fa-table-columns"></i>
+          <p>Rolety i parapety</p>
+        </li>
         <li></li>
-        <li class="">
-          <i class="fa-solid fa-mosquito-net"></i><br />Moskitier
+        <li class="icon">
+          <i class="fa-solid fa-mosquito-net"></i>
+          <p>Moskitiery</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-wrench"></i>
+          <p>Montaż i serwis</p>
         </li>
       </ul>
-    </div>
-    <!-- End of Icons __ -->
+      <h4>Nasze realizacje</h4>
+    </section>
+    <!-- End of about __ -->
 
     <!-- SLIDER IMAGES START -->
-    <section class="images-slider">
+    <section id="work" class="images-slider">
       <div class="options">
         <div
           class="option active"
@@ -98,6 +110,38 @@
       </div>
     </section>
     <!-- SLIDER IMAGES END -->
+    <!-- FOOTER START -->
+    <footer id="contact" class="contact">
+      <div class="container">
+        <div class="content">
+          <p class="contact-title">Skontaktuj się z nami</p>
+          <div class="contact-box">
+            <span><i class="fa-sharp fa-regular fa-envelope"></i></span>
+            <div classs="contact-information">
+              <p>Mail</p>
+              <a href="mailto:ruczynskipatryk22@gmail.com">mailcom</a>
+            </div>
+          </div>
+          <div class="contact-box">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <div classs="contact-information">
+              <p>Telefon</p>
+              <a href="tel:788-857-434">788-857-434</a>
+            </div>
+          </div>
+          <div class="contact-box">
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+            <div classs="contact-information">
+              <p>Linkedin</p>
+              <a href="https://www.facebook.com/profile.php?id=100063537064099"
+                >Facebook DMN Okna Drzwi Rolety Parapety</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="main.js"></script>

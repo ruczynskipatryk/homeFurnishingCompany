@@ -152,23 +152,55 @@ h2 {
 main .box img {
   width: 40%;
   height: 40%;
+  border-radius: 30px;
 }
 
 h3 {
-  color: var(--text-color);
+  color: var(--elements-color);
   font-size: 27px;
   margin-bottom: 20px;
 }
 /* End of main styling */
 
-/* Icons __ */
+/* about __ */
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon-list {
+  display: flex;
+  margin-bottom: 30px;
+  align-content: space-around;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+li i {
+  color: var(--elements-color);
+  font-size: 50px;
+}
+
+li p {
+  font-size: 20px;
+  color: var(--elements2-color);
+}
 
 h4 {
   color: var(--elements-color);
-  font-size: 20px;
+  font-size: 27px;
+  margin-bottom: 40px;
 }
 
-/* End -- ICONS */
+/* End -- about */
 
 /* START -> SLIDER of Photos by MN V */
 body .options {
@@ -256,3 +288,77 @@ body .options .option:not(.active) {
   flex-grow: 1;
 }
 /* End of CSS SLIDER */
+
+/*-- FOOTER START */
+
+#contact {
+  padding-top: 50px;
+  height: 300px;
+}
+
+#contact .container .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
+.contact-title {
+  padding: 20px 0px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--elements-color);
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box span {
+  background-color: var(--elements-color);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box span i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: var(--background-color);
+}
+
+.contact-box p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.contact-box a {
+  color: var(--text-color);
+}
+
+@media only screen and (max-width: 900px) {
+  #contact .container .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column;
+  }
+}
+
+/*-- FOOTER END */
