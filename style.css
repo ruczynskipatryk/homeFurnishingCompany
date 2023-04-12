@@ -11,10 +11,10 @@ html {
 }
 
 body {
-  --elements-color: #6b705c;
-  --text-color: #a5a58d;
-  --elements2-color: #b7b7a4;
-  --background-color: #ffe8d6;
+  --elements-color: #22223b;
+  --text-color: #4a4e69;
+  --elements2-color: #9a8c98;
+  --background-color: #f2e9e4;
   background: var(--background-color);
 }
 
@@ -30,10 +30,9 @@ header {
   padding: 0 100px;
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: var(--background-color);
+.logo img {
+  width: 75px;
+  height: 75px;
 }
 
 .hamburger {
@@ -139,49 +138,72 @@ main div.box {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 100px;
   color: var(--elements-color);
 }
 
 h2 {
   color: var(--elements-color);
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
 main .box img {
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 50%;
   border-radius: 30px;
 }
 
-h3 {
-  color: var(--elements-color);
-  font-size: 27px;
-  margin-bottom: 20px;
+@media screen and (max-width: 610px) {
+  main .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main .box img {
+    width: 70%;
+    height: 70%;
+  }
 }
+
 /* End of main styling */
 
 /* about __ */
 
-.presentation {
+h3 {
+  color: var(--elements-color);
+  font-size: 40px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+}
+
+.about-content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  color: var(--elements-color);
+  width: 70%;
+  margin: 10px 10px 40px 10px;
+  font-size: 20px;
 }
 
 .icon-list {
   display: flex;
-  margin-bottom: 30px;
-  align-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 li i {
@@ -194,15 +216,51 @@ li p {
   color: var(--elements2-color);
 }
 
-h4 {
-  color: var(--elements-color);
-  font-size: 27px;
-  margin-bottom: 40px;
+@media screen and (max-width: 780px) {
+  .about-content-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  li i {
+    font-size: 40px;
+  }
+
+  li p {
+    font-size: 17px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  li i {
+    font-size: 50px;
+  }
+
+  li {
+    margin: 0 0 20px 0px;
+  }
+  .icon-list {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
 }
 
 /* End -- about */
 
 /* START -> SLIDER of Photos by MN V */
+h4 {
+  color: var(--elements-color);
+  font-size: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 body .options {
   display: flex;
   flex-direction: row;
@@ -220,6 +278,9 @@ body .options {
   }
   body .options .option:nth-child(5) {
     display: none;
+  }
+  h4 {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 638px) {
@@ -317,6 +378,7 @@ body .options .option:not(.active) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .contact-box span {
